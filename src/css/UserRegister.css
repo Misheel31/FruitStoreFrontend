@@ -1,0 +1,103 @@
+/* UserRegister.css */
+
+.main-register-wrapper {
+    display: flex;
+    height: 700px;
+}
+
+.leftcontent_regsiter {
+    flex: 1;
+    background-color: #f0f0f0;
+    background-image: url("src/assets/login.jpg");
+    background-size: cover;
+}
+
+.wrapperRegister {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box-register {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-box-register h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.input-box-register {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box-register input {
+    width: 350px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-box-register label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box-register input:focus + label,
+.input-box-register input:valid + label {
+    top: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.conditions {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/*.conditions label {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+.conditions label input {
+    margin-right: 3px;
+}
+
+.register-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.login {
+    text-align: center;
+    color: #555;
+}
+
+.login p {
+    margin-top: 20px;
+}
+
+.Register-link {
+    color: #3498db;
+}
