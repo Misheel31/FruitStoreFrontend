@@ -3,8 +3,10 @@ import {useMutation} from "react-query";
 import axios from "axios";
 import {useForm} from "react-hook-form";
 import Navbar from "./Navbar.tsx";
+import {useNavigate} from "react-router-dom";
 
 const UserRegister = () => {
+    const navigate = useNavigate();
 
     const saveData = useMutation({
         mutationKey: "SAVEDATA",
@@ -18,6 +20,7 @@ const UserRegister = () => {
         console.log("Register button clicked");
         console.log(values);
         saveData.mutate(values)
+        navigate("/login")
     };
 
     const {register,
